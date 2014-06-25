@@ -1,0 +1,3 @@
+[submodule "TestEng"]
+	path = TestEng
+	url = git@github.com:pocketgems/TestEng.git
