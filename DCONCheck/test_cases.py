@@ -11,7 +11,22 @@ dcon_repo_dir_txt = open('../info.txt', 'r')
 dcon_staging_dir = dcon_repo_dir_txt.read() + '/staging/'
 all_csvs = getAllCSV(dcon_staging_dir)
 csvs = csv_class_factory(dcon_staging_dir)
+
+print "\n\n\n\n\n"
+print "row LTQsuperhero1"
 print csvs["Achievements.csv"].row('LTQsuperhero1')
+
+print "\n\n\n\n\n"
+print "empty row"
+print csvs["Achievements.csv"].row()
+
+print "\n\n\n\n\n"
+print "column questname"
+print csvs["Achievements.csv"].column('questName')
+
+print "\n\n\n\n\n"
+print "empty column"
+print csvs["Achievements.csv"].column()
 
 #********************************* List of Test Cases ************************************
 def tests():
